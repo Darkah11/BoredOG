@@ -11,7 +11,12 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section className=" hero relative bg-background-10 flex flex-col justify-center">
+        <section className=" hero relative flex flex-col justify-center">
+          <div className=" absolute top-0 -z-10 h-full w-full">
+            <div className=" bg-background-10 bg-opacity-55 absolute w-full h-full"/>
+            <img src="/bored-og-banner.jpg" alt="bored og banner" className=" w-full h-full object-cover" />
+          </div>
+
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -19,7 +24,11 @@ export default function Home() {
             viewport={{ once: false }}
             className="' flex flex-col gap-5 absolute bottom-1 right-1"
           >
-            <Link href={"https://x.com/boredofficeguy_?s=21&t=Z5JU_OZ_VRtAy5u0T8DTIA"}>
+            <Link
+              href={
+                "https://x.com/boredofficeguy_?s=21&t=Z5JU_OZ_VRtAy5u0T8DTIA"
+              }
+            >
               <img
                 src="/x.svg"
                 className=" w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
@@ -33,7 +42,11 @@ export default function Home() {
                 alt=""
               />
             </Link>
-            <Link href={"https://www.tiktok.com/@boredofficeguy?_t=ZN-8t60DXUcrQc&_r=1"}>
+            <Link
+              href={
+                "https://www.tiktok.com/@boredofficeguy?_t=ZN-8t60DXUcrQc&_r=1"
+              }
+            >
               <img
                 src="/tiktok.svg"
                 className="  w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
@@ -47,7 +60,7 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false }}
-              className=" w-fit m-auto "
+              className=" w-fit m-auto z-30"
             >
               <h2 className=" text-primary-5 font-bold text-5xl md:text-8xl lg:text-9xl">
                 JOIN THE
@@ -142,7 +155,7 @@ export default function Home() {
           <div>
             <Slider />
           </div>
-          <div className=" px-5 xl:px-24 flex flex-col md:flex-row gap-x-5 items-center justify-between mt-5">
+          <div className=" px-5 xl:px-24 flex flex-col md:flex-row pb-8 gap-x-5 items-center justify-between mt-5">
             <motion.div
               variants={fadeIn("left", 0.2)}
               initial="hidden"
@@ -167,10 +180,10 @@ export default function Home() {
                 movement. Why? Because if we can’t beat the system, we might as
                 well meme it.
               </p>
-              <Link href={'https://t.me/BoredOfficeGuyPortal'}>
-              <button className=" hover:bg-background-10 hover:border-background-10 mt-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-white">
-                Learn More
-              </button>
+              <Link href={"https://t.me/BoredOfficeGuyPortal"}>
+                <button className=" hover:bg-background-10 hover:border-background-10 mt-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-white">
+                  Learn More
+                </button>
               </Link>
             </motion.div>
             <motion.div
@@ -188,15 +201,6 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false }}
-          className=" mt-10"
-        >
-          <img src="/bored-og-banner.jpg" alt="bored og banner" />
-        </motion.div>
         <section id="vision" className=" bg-primary-5 py-5 px-5 xl:px-24">
           <div className=" flex flex-col md:flex-row gap-x-5 items-center justify-between">
             <motion.div
@@ -284,7 +288,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <p className=" font-bold text-2xl">$100k</p>
+                <p className=" font-bold text-2xl">$250k</p>
               </div>
             </div>
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
@@ -293,27 +297,7 @@ export default function Home() {
                   Powerpoint Presentation 2
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                Home, Sweet Home
-                </h4>
-              </div>
-              <div className=" mt-2">
-                <img
-                  src="/lock.png"
-                  alt="lock image"
-                  className=" w-[200px] h-[200px]"
-                />
-              </div>
-              <div>
-                <p className=" font-bold text-2xl">$250k</p>
-              </div>
-            </div>
-            <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
-              <div className=" ">
-                <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 3
-                </h3>
-                <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                Burnout
+                  Home, Sweet Home
                 </h4>
               </div>
               <div className=" mt-2">
@@ -330,10 +314,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 4
+                  Powerpoint Presentation 3
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                A Speech of the Wolf of Wallstreet
+                  Burnout
                 </h4>
               </div>
               <div className=" mt-2">
@@ -350,10 +334,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 5
+                  Powerpoint Presentation 4
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                The Big Deal
+                  A Speech of the Wolf of Wallstreet
                 </h4>
               </div>
               <div className=" mt-2">
@@ -370,10 +354,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 6
+                  Powerpoint Presentation 5
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                Chaos at the Top
+                  The Big Deal
                 </h4>
               </div>
               <div className=" mt-2">
@@ -390,10 +374,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 7
+                  Powerpoint Presentation 6
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                I Know It Was You, Elon!
+                  Chaos at the Top
                 </h4>
               </div>
               <div className=" mt-2">
@@ -410,10 +394,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 8
+                  Powerpoint Presentation 7
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                Rock Bottom
+                  I Know It Was You, Elon!
                 </h4>
               </div>
               <div className=" mt-2">
@@ -430,10 +414,10 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
-                  Powerpoint Presentation 9
+                  Powerpoint Presentation 8
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                Judgement Day
+                  Rock Bottom
                 </h4>
               </div>
               <div className=" mt-2">
@@ -450,10 +434,30 @@ export default function Home() {
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
                 <h3 className=" text-background-10 font-bold text-2xl text-center">
+                  Powerpoint Presentation 9
+                </h3>
+                <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
+                  Judgement Day
+                </h4>
+              </div>
+              <div className=" mt-2">
+                <img
+                  src="/lock.png"
+                  alt="lock image"
+                  className=" w-[200px] h-[200px]"
+                />
+              </div>
+              <div>
+                <p className=" font-bold text-2xl">$75m</p>
+              </div>
+            </div>
+            <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
+              <div className=" ">
+                <h3 className=" text-background-10 font-bold text-2xl text-center">
                   Powerpoint Presentation 10
                 </h3>
                 <h4 className=" text-primary-5 font-bold text-xl text-center mb-4">
-                I Am Not Fucking Leaving
+                  I Am Not Fucking Leaving
                 </h4>
               </div>
               <div className=" mt-2">
@@ -467,7 +471,7 @@ export default function Home() {
                 <p className=" font-bold text-2xl">$100m</p>
               </div>
             </div>
-          
+
             {/* <div>
               <div>
                 <h3 className=" text-white font-bold text-2xl">
@@ -510,15 +514,19 @@ export default function Home() {
             </p>
             <div className=" flex items-center gap-4 justify-center mt-5">
               {" "}
-              <Link href={'https://t.me/BoredOfficeGuyPortal'}>
-              <button className=" hover:bg-primary-5 hover:text-primary-10 border-primary-5 border-[2px] w-[150px] lg:mt-10 font-semibold py-3 rounded-lg text-primary-5 text-sm md:text-base">
-                Join Telegram
-              </button>
+              <Link href={"https://t.me/BoredOfficeGuyPortal"}>
+                <button className=" hover:bg-primary-5 hover:text-primary-10 border-primary-5 border-[2px] w-[150px] font-semibold py-3 rounded-lg text-primary-5 text-sm md:text-base">
+                  Join Telegram
+                </button>
               </Link>
-              <Link href={'https://x.com/boredofficeguy_?s=21&t=Z5JU_OZ_VRtAy5u0T8DTIA'}>
-              <button className="hover:bg-transparent hover:text-primary-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-primary-10">
-                Join X
-              </button>
+              <Link
+                href={
+                  "https://x.com/boredofficeguy_?s=21&t=Z5JU_OZ_VRtAy5u0T8DTIA"
+                }
+              >
+                <button className="hover:bg-transparent hover:text-primary-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-primary-10">
+                  Join X
+                </button>
               </Link>
             </div>
           </motion.div>
@@ -536,22 +544,34 @@ export default function Home() {
           </div>
           <ul className="flex flex-col md:flex-row items-center gap-5 justify-center mt-5">
             <li>
-              <Link href={"/"} className=" hover:text-white text-primary-5 text-sm font-medium">
+              <Link
+                href={"/"}
+                className=" hover:text-white text-primary-5 text-sm font-medium"
+              >
                 HOME
               </Link>
             </li>
             <li>
-              <Link href={"#about"} className=" hover:text-white text-primary-5 text-sm font-medium">
+              <Link
+                href={"#about"}
+                className=" hover:text-white text-primary-5 text-sm font-medium"
+              >
                 ABOUT
               </Link>
             </li>
             <li>
-              <Link href={"#vision"} className=" hover:text-white text-primary-5 text-sm font-medium">
+              <Link
+                href={"#vision"}
+                className=" hover:text-white text-primary-5 text-sm font-medium"
+              >
                 VISION
               </Link>
             </li>
             <li>
-              <Link href={"#storymap"} className=" hover:text-white text-primary-5 text-sm font-medium">
+              <Link
+                href={"#storymap"}
+                className=" hover:text-white text-primary-5 text-sm font-medium"
+              >
                 STORYMAP
               </Link>
             </li>

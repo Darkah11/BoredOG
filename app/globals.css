@@ -25,7 +25,8 @@ body {
   font-family: Arial, Helvetica, sans-serif; */
 }
 .hero {
-  
+  /* background: url('../public/bored-og-vision.jpeg') center no-repeat;
+  background-size: contain; */
   @apply min-h-screen
 }
 h2, h3 {
