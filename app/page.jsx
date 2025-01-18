@@ -13,8 +13,12 @@ export default function Home() {
       <main>
         <section className=" hero relative flex flex-col justify-center">
           <div className=" absolute top-0 -z-10 h-full w-full">
-            <div className=" bg-background-10 bg-opacity-55 absolute w-full h-full"/>
-            <img src="/bored-og-banner.jpg" alt="bored og banner" className=" w-full h-full object-cover" />
+            <div className=" bg-background-10 bg-opacity-55 absolute w-full h-full" />
+            <img
+              src="/bored-og-banner.jpg"
+              alt="bored og banner"
+              className=" w-full h-full object-cover"
+            />
           </div>
 
           <motion.div
@@ -86,14 +90,19 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false }}
-              className=" flex items-center gap-5 justify-center mt-5"
+              className=" mt-5"
             >
+              <div className=" border-white border-[2px] w-fit py-3 px-8 rounded-full mx-auto">
+                <p className=" text-white text-xs md:text-base font-medium">0xCAFBf889bef0617d9209Cf96f18c850e901A6D61</p>
+              </div>
+              <div className=" flex items-center gap-5 justify-center mt-3">
                 <button className=" hover:bg-primary-5 hover:text-primary-10 border-primary-5 border-[2px] w-[150px] font-semibold py-3 rounded-lg text-primary-5 text-sm md:text-base">
                   Buy $BoredOG
                 </button>
                 <button className="hover:bg-transparent hover:text-primary-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-primary-10">
                   Copy CA
                 </button>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -106,13 +115,17 @@ export default function Home() {
               viewport={{ once: false }}
               className=" max-w-[550px]"
             >
-              <h2 className=" text-4xl font-bold">$BoredOG</h2>
+              <h2 className=" text-4xl font-bold mb-4">
+                Break the Chains, Start the Journey
+              </h2>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                aut est quae ducimus harum ea consectetur ipsa voluptatem, vel
-                temporibus veritatis. Voluptas voluptatum ullam quidem odit quis
-                officiis a repellat!
+                Life’s too short to stay stuck on the grind. $BoredOG is a call
+                to break free from the mundane, challenge the status quo, and
+                rediscover what makes you come alive. Ready to start your
+                journey? Explore where we’re making waves and join the
+                rebellion. Check us out on your favorite platforms and let’s
+                rewrite the script together.
               </p>
               <div className=" flex gap-3 items-center mt-5">
                 <button className=" border-background-10 border-[2px] bg-background-10 w-[150px] font-semibold py-3 rounded-lg text-white">
