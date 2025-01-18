@@ -81,6 +81,20 @@ export default function Home() {
                 way, we’re here.”
               </p>
             </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false }}
+              className=" flex items-center gap-5 justify-center mt-5"
+            >
+                <button className=" hover:bg-primary-5 hover:text-primary-10 border-primary-5 border-[2px] w-[150px] font-semibold py-3 rounded-lg text-primary-5 text-sm md:text-base">
+                  Buy $BoredOG
+                </button>
+                <button className="hover:bg-transparent hover:text-primary-5 border-primary-5 border-[2px] bg-primary-5 w-[150px] font-semibold py-3 rounded-lg text-primary-10">
+                  Copy CA
+                </button>
+            </motion.div>
           </div>
         </section>
         <section id="about">
@@ -115,41 +129,10 @@ export default function Home() {
               className=" relative mt-8 md:mt-0"
             >
               <img
-                src="/notepad.png"
-                alt="notepad"
-                className=" max-w-[400px] md:min-w-[400px] lg:min-w-[500px]"
+                src="/bored-og.jpg"
+                alt="bored og"
+                className=" max-w-[400px] md:min-w-[400px] lg:min-w-[500px] rounded-lg"
               />
-              <div className=" absolute top-5 md:top-10 lg:left-32 lg:top-12 left-16 mx-auto flex flex-col">
-                <h3 className=" text-xl font-semibold md:text-xl lg:text-2xl">
-                  Contract Address
-                </h3>
-                <p className=" hidden md:block">
-                  8TrFcKJDWc3Co4c7n9PR4Nb <br />
-                  K9gnzaXfPfPhpm18gpump/
-                </p>
-                <p className=" block md:hidden">
-                  8TrFcKJDWc3Co4c7n9
-                  <br />
-                  PR4NbK9gnzaXfPfPhp
-                  <br />
-                  m18gpump/
-                </p>
-                {/* <p className=" text-xs md:hidden">
-                  8TrFcKJDWc3Co4c7n
-                  <br />
-                  9PR4NbK9gnzaXfPfP
-                  <br />
-                  hpm18gpump/
-                </p> */}
-                <button className=" mx-auto border-background-10 border-[2px] w-[100px] md:w-[150px] mt-5 md:mt-7 lg:mt-10 font-semibold py-1 md:py-3 rounded-lg text-background-10 text-sm md:text-base">
-                  Copy CA
-                </button>
-              </div>
-              <div className=" absolute bottom-16 md:bottom-24 right-28   lg:right-44 flex flex-col">
-                <button className=" border-background-10 border-[2px] bg-background-10 w-[100px] md:w-[150px] font-semibold py-1 md:py-3 rounded-lg text-white">
-                  Buy Now
-                </button>
-              </div>
             </motion.div>
           </div>
           <div>
@@ -269,7 +252,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false }}
-            className=" mt-10 flex flex-col justify-center md:justify-between md:flex-row gap-y-10 gap-x-5 flex-wrap"
+            className=" mt-10 flex flex-col justify-center md:justify-center md:flex-row gap-y-10 gap-x-5 flex-wrap"
           >
             <div className="w-fit mx-auto md:mx-0 flex flex-col items-center bg-gray-100 shadow-lg rounded-lg px-5 py-12">
               <div className=" ">
