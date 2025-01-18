@@ -20,7 +20,7 @@ export default function Slider({ src }) {
 
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2 - 8;
+    let finalPosition = -width / 2 - 32;
 
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
@@ -34,9 +34,9 @@ export default function Slider({ src }) {
   }, [xTranslation, width]);
   return (
     <motion.div
-      className=" flex gap-8 "
+      className=" flex gap-8 overflow-x-clip"
       ref={ref}
-      style={{x:xTranslation, width: "max-content" }}
+      style={{x:xTranslation, width: "max-content"}}
     >
       {[...images, ...images].map((item, index) => {
         //   return <Card src={item}  />
@@ -45,7 +45,7 @@ export default function Slider({ src }) {
             src={item}
             key={index}
             alt={"ms office"}
-            className=" object-contain md:h-[100px] h-[100px] w-autoblock"
+            className=" md:w-32 w-16"
           />
         );
       })}

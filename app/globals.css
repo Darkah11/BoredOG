@@ -15,6 +15,9 @@
     --foreground: #ededed;
   }
 }
+* {
+  overflow-x: clip;
+}
 
 body {
   /* color: var(--foreground);
